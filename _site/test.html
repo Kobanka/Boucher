@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <style>
+        .form-group i {
+  /* Position the icon */
+  position: absolute;
+  /* Align the icon to the left */
+  left: 0;
+  /* Add padding to separate the icon from the input field */
+  padding: 0.5em;
+  /* Add shadow effect to the icon */
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.form-group input {
+  /* Add padding to separate the input field from the icon */
+  padding-left: 2.5em;
+  /* Add border-radius to match the shape of the icon's shadow */
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+    </style>
+    <form>
+        <div class="form-group">
+          <label for="username">
+            <i class="fas fa-user"></i>
+            <input type="text" class="form-control" id="username" placeholder="Enter username">
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="email">
+            <i class="fas fa-envelope"></i>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="password">
+            <i class="fas fa-lock"></i>
+            <input type="password" class="form-control" id="password" placeholder="Enter password">
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+      </form>      
+</body>
+</html>

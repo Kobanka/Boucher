@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Logo Le Boucher du Coin sf_Plan de travail 1.png">
+    <title>Le Boucher du Coin</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/4e15758d88.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="grid">
+       
+        <header class="header grid1 large">
+    <div class="header-nav sec1">
+        <span class="slogan"> Passer vos commandes maintenant et faites vous livrer!! <i class="fa solid fa-truck livrer"></i></span>
+        <div class="compte">
+            <i class="fa fa-user utilisateur"></i>
+            <ul class="identité police">
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </div>
+    </div>
+        
+    <div class="header-nav sec2">
+    <ul class="nav-link police">
+        <li><a href="/#">Accueil</a></li>
+        <li><a href="detailsPayment.html">Mon compte</a></li>
+        <li><a href="/">Mon panier</a></li>
+        <li><a href="#contact">Contactez-nous</a></li>
+        <li class="chrch"><input type="search" placeholder="Rechercher..." id="search" class="search">
+            <label for="search" class="loupe fa-solid fa-magnifying-glass loupe"></label>
+       </li>
+    </ul>    
+</div>
+
+    <a href="/" class="header-logo sec3">
+        <img src="images/Logo Le Boucher du Coin sf_Plan de travail 1.png" alt="Logo Boucher du Coin">
+    </a>
+       
+</header>
+        
+       <!-- *************************** Menu ********************** -->
+       
+        <nav class="nav container">
+    <div class="Box">
+        <a href="#" class="toggleBox">
+            <span class="icon"></span>
+        </a>
+    
+        <ul class="navItems">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house" style="--i:1"></i>
+                    <span style="--g:1"> Accueil </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user" style="--i:2"></i>
+                    <span style="--g:2"> Mon compte </span>    
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-basket-shopping" style="--i:3"></i>
+                    <span style="--g:3"> Mon panier </span> 
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-phone" style="--i:3"></i>
+                    <span style="--g:3">  Contactez-nous  </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass" style="--i:3"></i>
+                    <span style="--g:3">  Contactez-nous  </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    var toggleClick = document.querySelector(".toggleBox");
+    var container = document.querySelector(".container");
+    toggleClick.addEventListener('click', () => {
+        toggleClick.classList.toggle("active");
+        container.classList.toggle("active");
+    })
+</script>
+
+        <!-- ************************** Contenu Principal *********************** -->
+
+        <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap'); 
+</style>
+
+<form class="form2">
+    <div class="couvre">
+        <h2>INSCRIPTION</h2>
+        <div class="align1">
+            <div>
+                <label for="name">NOM</label> 
+                <input name="nom" type="text"/> 
+            </div>
+        
+            <div>
+                <label for="surname">Prénom(s)</label> 
+                <input name="prenom" type="text"/>
+            </div>  
+        </div>
+        
+        <label for="adresse">Adresse</label> 
+        <input name="adresse" type="text" />  
+        
+        <div class="align1">
+            <div>
+                <label for="password">Mot de passe</label> 
+                <input name="mot de passe" type="password"/> 
+            </div>
+            
+            <div>
+                <label for="passwordConf">Confirmer mot de passe</label> 
+                <input name="confirmer mot de passe" type="password"/>
+            </div>
+        </div>
+        
+        <label for="tel">Numéro de téléphone</label> 
+        <input name="telephone" type="tel"/> 
+        
+        <button type="submit" value="S'inscrire">S'inscrire</button>
+        <!-- <p>Vous avez déjà un compte ? <a href="connexion.html">Se connecter</a></p> -->
+        <div class="bas">
+            <a class="bas1" href="connexion.html">COMPTE</a>
+            <a class="bas2" href="detailsPayment.html">Détails de paiement</a>
+        </div>
+    </div>
+</form>
+
+
+
+        <!-- ******************************* Footer *************************************** -->
+
+        <footer class="pied large" id="contact">
+    <ul class="cntPied">
+        <li class="facebook"><a href="facebook.com" class="social"><img src="images/facebook.jpg" alt="Facebook" class="sociaux"></a></li>
+        <li><p class="num"><i class="fa-solid fa-phone deco2"></i>&nbsp;&nbsp;<i class="fa brands fa-whatsapp deco"></i>&nbsp;
+            +226 76 52 94 99 / 70 03 52 94 / 78 30 49 00 / 60 23 87 69 &nbsp;<i class="fa brands fa-whatsapp deco"></i>&nbsp;</p></li>
+        <li class="mail"><a href="gmail.com" class="social "><img src="images/gmail.png" alt="Gmail" class="sociaux"></a></li>
+    </ul>
+    <!-- <div class="right">
+        <h5>From Scratch (); 2022.<span>All Rights Reserved</span></h5>
+    </div> -->
+</footer>
+
+    </div>
+</body>
+</html>

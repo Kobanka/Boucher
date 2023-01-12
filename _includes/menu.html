@@ -1,0 +1,49 @@
+<nav class="nav container">
+    <div class="Box">
+        <a href="#" class="toggleBox">
+            <span class="icon"></span>
+        </a>
+    
+        <ul class="navItems">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house" style="--i:1"></i>
+                    <span style="--g:1"> Accueil </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user" style="--i:2"></i>
+                    <span style="--g:2"> Mon compte </span>    
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-basket-shopping" style="--i:3"></i>
+                    <span style="--g:3"> Mon panier </span> 
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-phone" style="--i:3"></i>
+                    <span style="--g:3">  Contactez-nous  </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass" style="--i:3"></i>
+                    <span style="--g:3">  Contactez-nous  </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    var toggleClick = document.querySelector(".toggleBox");
+    var container = document.querySelector(".container");
+    toggleClick.addEventListener('click', () => {
+        toggleClick.classList.toggle("active");
+        container.classList.toggle("active");
+    })
+</script>
