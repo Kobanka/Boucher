@@ -14,38 +14,36 @@
 <body>
     <div class="grid">
        
-        <header class="header grid1 large">
-    <div class="header-nav sec1">
-        <span class="slogan"> Passer vos commandes maintenant et faites vous livrer!! <i class="fa solid fa-truck livrer"></i></span>
-        <div class="compte">
-            <i class="fa fa-user utilisateur"></i>
-            <ul class="identité police">
-                <li><a href="inscription.html">Inscription</a></li>
-                <li><a href="connexion.html">Connexion</a></li>
-            </ul>
-        </div>
-    </div>
         
-    <div class="header-nav sec2">
+<header class="header grid1 large" id="head">
+   
+    <div class="fixe">
+        <div class="header-nav sec1">
+            <span class="slogan"> Passer vos commandes maintenant et faites vous livrer!! <i class="fa solid fa-truck livrer"></i></span>
+            <div class="compte">
+                <i class="fa fa-user utilisateur"></i>
+                <ul class="identité police">
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                </ul>
+            </div>
+        </div>
+            
+        <div class="header-nav sec2">
     <ul class="nav-link police">
-        <li><a href="/#">Accueil</a></li>
+        <li><a href="#head">Accueil</a></li>
         <li><a href="detailsPayment.html">Mon compte</a></li>
-        <li><a href="/">Mon panier</a></li>
+        <li><a href="#head">Mon panier</a></li>
         <li><a href="#contact">Contactez-nous</a></li>
         <li class="chrch"><input type="search" placeholder="Rechercher..." id="search" class="search">
             <label for="search" class="loupe fa-solid fa-magnifying-glass loupe"></label>
        </li>
     </ul>    
 </div>
-
-    <a href="/" class="header-logo sec3">
-        <img src="images/Logo Le Boucher du Coin sf_Plan de travail 1.png" alt="Logo Boucher du Coin">
-    </a>
-       
-</header>
-        
-       <!-- *************************** Menu ********************** -->
-       
+    
+        <a href="/" class="header-logo sec3">
+            <img src="images/Logo Le Boucher du Coin sf_Plan de travail 1.png" alt="Logo Boucher du Coin">
+        </a>
         <nav class="nav container">
     <div class="Box">
         <a href="#" class="toggleBox">
@@ -54,31 +52,31 @@
     
         <ul class="navItems">
             <li>
-                <a href="#">
+                <a href="#head">
                     <i class="fa-solid fa-house" style="--i:1"></i>
                     <span style="--g:1"> Accueil </span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="inscription.html">
                     <i class="fa-solid fa-user" style="--i:2"></i>
                     <span style="--g:2"> Mon compte </span>    
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#head">
                     <i class="fa-solid fa-basket-shopping" style="--i:3"></i>
                     <span style="--g:3"> Mon panier </span> 
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#contact">
                     <i class="fa-solid fa-phone" style="--i:3"></i>
                     <span style="--g:3">  Contactez-nous  </span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#head">
                     <i class="fa-solid fa-magnifying-glass" style="--i:3"></i>
                     <span style="--g:3">  Contactez-nous  </span>
                 </a>
@@ -95,6 +93,61 @@
         container.classList.toggle("active");
     })
 </script>
+    </div>
+       
+</header>
+        
+       <!-- *************************** Menu ********************** -->
+       
+        <!-- <nav class="nav container">
+    <div class="Box">
+        <a href="#" class="toggleBox">
+            <span class="icon"></span>
+        </a>
+    
+        <ul class="navItems">
+            <li>
+                <a href="#head">
+                    <i class="fa-solid fa-house" style="--i:1"></i>
+                    <span style="--g:1"> Accueil </span>
+                </a>
+            </li>
+            <li>
+                <a href="inscription.html">
+                    <i class="fa-solid fa-user" style="--i:2"></i>
+                    <span style="--g:2"> Mon compte </span>    
+                </a>
+            </li>
+            <li>
+                <a href="#head">
+                    <i class="fa-solid fa-basket-shopping" style="--i:3"></i>
+                    <span style="--g:3"> Mon panier </span> 
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <i class="fa-solid fa-phone" style="--i:3"></i>
+                    <span style="--g:3">  Contactez-nous  </span>
+                </a>
+            </li>
+            <li>
+                <a href="#head">
+                    <i class="fa-solid fa-magnifying-glass" style="--i:3"></i>
+                    <span style="--g:3">  Contactez-nous  </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    var toggleClick = document.querySelector(".toggleBox");
+    var container = document.querySelector(".container");
+    toggleClick.addEventListener('click', () => {
+        toggleClick.classList.toggle("active");
+        container.classList.toggle("active");
+    })
+</script> -->
 
         <!-- ************************** Contenu Principal *********************** -->
 
@@ -111,7 +164,7 @@
       <i class="fa-solid fa-lock"></i>
       </label>
       <input type="password" class="form-control" id="password" placeholder="&nbsp;&nbsp;Mot de passe">
-      <i class="fa-solid fa-eye" id="togglePassword" style="margin-left: -32px; cursor: pointer;"></i>
+      <i class="fa-solid fa-eye" id="togglePassword" style="cursor: pointer;"></i>
     </div>
 
     <button type="submit" class="btn">CONNEXION</button>

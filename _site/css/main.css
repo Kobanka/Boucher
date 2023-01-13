@@ -96,6 +96,12 @@ a img {
   background-color: rgba(105,25,11,255);
   grid-area: header;
 }
+.header .fixe{
+  position: fixed;
+  width: 100%;
+  background-color: rgba(105,25,11,255);
+  z-index: 20;
+}
 
 .menu {
   background-color: #c0c0;
@@ -140,7 +146,6 @@ a img {
 
 .sec1{
   background-color:rgba(211,20,29,255);
-  display: inline-block;
   color: #fff;
   height: 64px;
 }
@@ -246,7 +251,7 @@ ul a{
   padding: 5px auto;
   text-align: center;
   margin: auto;
-  margin-top: 1.5em;
+  margin-top: 4em;
   max-width: 576px;
   border: none; 
   border-radius: 20px;
@@ -446,10 +451,10 @@ ul a{
   transition: 0.4s ease;
 }
 .toggleBox{
-  position: relative;
   display: block;
   width: 50px;
-  height: 50px;
+  height: 36px;
+  border: none;
   border-radius: 50px;
 }
 .icon{
@@ -481,6 +486,7 @@ ul a{
 }
 .toggleBox.active .icon{
   width: 0;
+  top: 5%;
 }
 .toggleBox.active .icon::before{
   width: 40px;
@@ -543,11 +549,7 @@ li{
   color: rgba(211,20,29,255);
 }
 .navItems li a span{
-  position: absolute;
   display: none;
-  margin:  22px 0;
-  font-weight: 500;
-  letter-spacing: 1.5px;
 } 
 
 /* ******************************************************** Style de Connexion *******************************************************/
@@ -577,15 +579,14 @@ form::before{
   height: 80vh;
   align-items: center;
   font-family: 'Poppins', sans-serif;
-  /* font-size: 3.5em; */
 }
 .couvre{
-  height: 50vh;
-  width: 40vw;
+  height: fit-content;
+  width: 50vw;
   display: flex;
   margin: 25px auto 50px;
   flex-direction: column;
-  padding: 80px;
+  padding: 80px 80px 0;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
@@ -651,6 +652,7 @@ button[type="submit"]{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 10px;
 }
 .couvre .bas a{
   padding: 4px;
@@ -717,6 +719,7 @@ button[type="submit"]{
 }
 #togglePassword{
   filter: none;
+  margin-left: -32px;
   font-size: 0.3em;
   color: rgba(105,25,11,255);
   transform: none;
@@ -743,29 +746,98 @@ button[type="submit"]{
 }
 
 /***************************************************** Mobile Adaptation *****************************************************/
-@media (max-width: 468.4px) {
-  .Box{
-    top: -4890px;
-    width: 50px;
-    visibility: visible;
-    position: relative;
-    border-radius: 5px;
-    border-width: 3px;
-    border-color: rgba(211,20,29,255);
-    z-index: 10;
-    bottom: 0;
-    left: 2.5em;
-    height: fit-content;
-    background-color: #fff;
-  }
-}
 @media (max-width: 650px) {
   .pied .cntPied .num{
     font-family: 'Advent Pro', sans-serif;
-    font-size: .5em;
+    font-size: 1em;
     color: #fff;
     margin: auto;
   }
+  .form1{
+    grid-area: corps;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 80vh;
+    align-items: center;
+    font-size: 2.5em;
+  }
+  .form-group input{
+    border: none;
+    font-size: .5em;
+    height: 38px;
+    border-radius: 5px;
+  }
+  .form1 .btn{
+    margin-top: 10px;
+    min-width: 255px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(211,20,29,255);
+    font-size: .5em;
+    color: #fff;
+    transform: translateX(0%);
+    padding: 6px 0;
+    cursor: pointer;
+  }
+  .form-group i{
+    filter: drop-shadow(9px 0 0  hwb(33 77% 0%));
+    color: #fff;
+    z-index: 2;
+    height: 58px;
+    transform: translate(50%,13%);
+  }
+  #togglePassword{
+    filter: none;
+    position: absolute;
+    font-size: .5em;
+    color: rgba(105,25,11,255);
+    transform: none;
+    transform: translate(-100%,30%);
+    margin-left: 0;
+  }
+  .align1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .align1 div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form2{
+    grid-area: corps;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-height: 80vh;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  .couvre{
+    height: fit-content;
+    width: 80vw;
+    display: flex;
+    margin: 2% 2% 4%;
+    flex-direction: column;
+    padding: 5% 5% 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  .corps .part1 {
+    padding: 5px auto;
+    text-align: center;
+    margin: auto;
+    margin-top: 6em;
+    max-width: 576px;
+    border: none; 
+    border-radius: 20px;
+    background-color: #fff;
+  }
+
 }
 
 @media (max-width: 1100px) {
@@ -797,13 +869,13 @@ button[type="submit"]{
   .Box{
     width: 50px;
     visibility: visible;
-    position: relative;
+    position: fixed;
     border-radius: 5px;
     border-width: 3px;
     border-color: rgba(211,20,29,255);
     z-index: 10;
-    bottom: 0;
-    top: -4810px;
+    bottom: -340px;
+    top: 65px;
     left: 2.5em;
     height: fit-content;
     background-color: #fff;
