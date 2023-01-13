@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Alegreya+Sans+SC:wght@700&family=Open+Sans&family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
 @font-face {
   font-family: bold_game;
   src: url('/fonts/bold_game_font_7-webfont.woff2') format('woff2'),
@@ -33,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  font-family: 'Open Sans', sans-serif;
 }
 blockquote, q {
   quotes: none;
@@ -77,8 +79,6 @@ a img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* grid-template-columns: repeat(4,auto);
-  grid-auto-rows: minmax(5em,auto); */
   box-sizing: border-box;
   padding: 0 5em;
 }
@@ -167,7 +167,9 @@ a img {
   display: block;
 }
 .police{
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Roboto Flex', sans-serif;  */
+  /* !come back later */
 }
 ul a{
   text-decoration: none;
@@ -259,6 +261,7 @@ ul a{
 }
 .corps .part1 .tete{
   font-size: 3.5em;
+  /* ! Come back later */
   font-family: bold_game, sans-serif;
   font-style: bold;
   font-weight: 600;
@@ -268,12 +271,14 @@ ul a{
 .corps .part1 .size{
   font-size: 1.5em;
   text-transform: uppercase;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 500;
+  letter-spacing: -1px;
+  font-family: 'Open Sans', sans-serif;
 }
 .ligne{ 
   display: flex; 
   flex-direction: row; 
-  margin: 0 15%;
+  margin: 0 5%;
   color: rgba(105,25,11,255);
 }
 .ligne:before, 
@@ -288,7 +293,8 @@ ul a{
   margin: 15px auto;
   padding: 5px ;
   border: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   width: 143.367px;
   border-radius: 0 15px;
@@ -344,7 +350,8 @@ ul a{
   text-transform: capitalize;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
+  font-weight: 600;
+  letter-spacing: -0.5px;
   border: none;
   border-radius: 0 15px;
   background-color: rgba(228,22,34,255);
@@ -362,7 +369,7 @@ ul a{
   background-color: #fff;
   color: rgba(105,25,11,255);
   border-style: unset;
-  font-family: ff-real-headline-pro-2, sans-serif; 
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   text-transform: capitalize;
   border: none;
@@ -409,7 +416,7 @@ ul a{
   max-width: 55px;
 }
 .pied .cntPied .num{
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   color: #fff;
   margin: auto;
@@ -578,7 +585,8 @@ form::before{
   justify-content: center;
   height: 82vh;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 .couvre{
   height: fit-content;
@@ -759,7 +767,7 @@ button[type="submit"]{
 /***************************************************** Mobile Adaptation *****************************************************/
 @media (max-width: 650px) {
   .pied .cntPied .num{
-    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     color: #fff;
     margin: auto;
