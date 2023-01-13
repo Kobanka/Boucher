@@ -10,6 +10,15 @@
 
 }
 
+@font-face {
+  font-family: alpha_kind;
+  src: url('/fonts/alphakind-webfont.woff2') format('woff2'),
+       url('/fonts/alphakind-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -103,13 +112,6 @@ a img {
   z-index: 20;
 }
 
-.menu {
-  background-color: #c0c0;
-  grid-area: menu;
-  display: none;
-  z-index: 10;
-}
-
 .corps {
   position: relative;
   grid-area: corps;
@@ -168,7 +170,6 @@ a img {
 }
 .police{
   font-family: 'Open Sans', sans-serif;
-  /* font-family: 'Roboto Flex', sans-serif;  */
   /* !come back later */
 }
 ul a{
@@ -178,7 +179,7 @@ ul a{
 .slogan{
   float: right;
   margin: 1.5em 25% 0;
-  font-family: brandon-grotesque, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
 }
@@ -262,7 +263,7 @@ ul a{
 .corps .part1 .tete{
   font-size: 3.5em;
   /* ! Come back later */
-  font-family: bold_game, sans-serif;
+  font-family: alpha_kind, sans-serif;
   font-style: bold;
   font-weight: 600;
   margin-bottom: 0;
@@ -563,6 +564,7 @@ li{
 form{
   position: relative;
 }
+
 form::before{
   content: "";
   background-image: url("../images/arr.jpg");
@@ -855,6 +857,20 @@ button[type="submit"]{
     border: none; 
     border-radius: 20px;
     background-color: #fff;
+  }
+  .couvre{
+    margin: 150px auto 50px;
+  }
+  .couvre .images .alignIm{
+    flex-basis: 50%;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  .couvre .images .alignIm > img{
+    height: 60px;
+    width: 80px;
+    object-fit: fill;
+    border-radius: 5px;
   }
 
 }
