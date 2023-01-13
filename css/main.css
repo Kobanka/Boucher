@@ -576,15 +576,15 @@ form::before{
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  height: 80vh;
+  height: 82vh;
   align-items: center;
   font-family: 'Poppins', sans-serif;
 }
 .couvre{
   height: fit-content;
-  width: 50vw;
+  width: 30vw;
   display: flex;
-  margin: 25px auto 50px;
+  margin: 50px auto 50px;
   flex-direction: column;
   padding: 80px 80px 0;
   background-color: #fff;
@@ -646,7 +646,6 @@ button[type="submit"]{
 }
 .couvre p a, .bas a{
   text-decoration: 0;
-  color: rgba(105,25,11,255);
 }
 .couvre .bas{
   display: flex;
@@ -657,10 +656,22 @@ button[type="submit"]{
 .couvre .bas a{
   padding: 4px;
   background-color: #fff;
-  border-bottom-color: rgba(105,25,11,255);
 }
-.couvre .bas a:hover,.couvre .bas a:focus{
+.couvre .bas .bas2{
+  border-bottom: 2px solid rgba(105,25,11,255);
+  color: rgba(105,25,11,255);
+}
+.couvre .bas .bas1{
+  border-bottom: 2px solid rgba(211,20,29,255);
+  color: rgba(211,20,29,255);
+}
+.couvre .bas .bas1:hover,.couvre .bas .bas1:focus{
   background-color: rgba(211,20,29,255);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.couvre .bas .bas2:hover,.couvre .bas .bas2:focus{
+  background-color: rgba(105,25,11,255);
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
@@ -672,7 +683,7 @@ button[type="submit"]{
   flex-wrap: nowrap;
   justify-content: center;
   flex-direction: column;
-  height: 80vh;
+  height: 82vh;
   align-items: center;
   font-size: 3.5em;
 }
@@ -880,7 +891,9 @@ button[type="submit"]{
     height: fit-content;
     background-color: #fff;
   }
-  
+  .couvre{
+    width: 50vw;
+  }
   .grid1{
     display: grid;
     grid-column: 1fr;
