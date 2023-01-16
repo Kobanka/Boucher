@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
 @font-face {
   font-family: bold_game;
-  src: url('/fonts/bold_game_font_7-webfont.woff2') format('woff2'),
-       url('/fonts/bold_game_font_7-webfont.woff') format('woff');
+  src: url('../fonts/bold_game_font_7-webfont.woff2') format('woff2'),
+       url('../fonts/bold_game_font_7-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -12,8 +12,8 @@
 
 @font-face {
   font-family: alpha_kind;
-  src: url('/fonts/alphakind-webfont.woff2') format('woff2'),
-       url('/fonts/alphakind-webfont.woff') format('woff');
+  src: url('../fonts/alphakind-webfont.woff2') format('woff2'),
+       url('../fonts/alphakind-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -263,7 +263,7 @@ ul a{
 .corps .part1 .tete{
   font-size: 3.5em;
   /* ! Come back later */
-  font-family: alpha_kind, sans-serif;
+  font-family: alpha_kind, bold_game, sans-serif;
   font-style: bold;
   font-weight: 600;
   margin-bottom: 0;
@@ -768,6 +768,9 @@ button[type="submit"]{
 
 /***************************************************** Mobile Adaptation *****************************************************/
 @media (max-width: 650px) {
+  .corps .part1 .tete{
+    font-size: 2.5em;
+  }
   .pied .cntPied .num{
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
